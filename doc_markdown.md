@@ -7,17 +7,17 @@ Vous pouver toujour suivre la methode pas a pas [ici](https://github.com/skills/
 ### Parametre
 police de largeur fixe ; Profil > Settings > Apparence > Préférence de police de l’éditeur Markdown > sélectionnez
 ### Ecriture
-|Syntaxe         |Style           |Raccourci|
-|-               |-               |-        |
-|`*txt*`         |Italique        |Ctrl+I   |
-|`**txt**`       |Gras            |Ctrl+B   |
-|`***txt***`     |Gras et Italique|None     |
-|`~~txt~~`       |Barré           |None     |
-|`<sub>txt</sub>`|Indice          |None     |
-|`<sup>txt</sup>`|Exposant        |None     |
-|`>txt`          |Citation        |None     |
-|``` `txt` ```   |Code            |Crtl+E   |
-|`<!--txt-->`    |Comantaire      |None     |
+|Syntaxe          |Style           |Raccourci|
+|-                |-               |-        |
+|`*txt*`          |Italique        |Ctrl+I   |
+|`**txt**`        |Gras            |Ctrl+B   |
+|`***txt***`      |Gras et Italique|None     |
+|`~~txt~~`        |Barré           |None     |
+|`<sub>txt</sub>` |Indice          |None     |
+|`<sup>txt</sup>` |Exposant        |None     |
+|`>txt`           |Citation        |None     |
+|``` `txt` ```    |Code            |Crtl+E   |
+|`<!--txt-->`     |Comantaire      |None     |
 ### Alertes
 `>[!tp]` et en citation les informations
 |Type       |Style             |Couleur|
