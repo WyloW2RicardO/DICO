@@ -7,26 +7,26 @@ Vous pouver toujour suivre la methode pas a pas [ici](https://github.com/skills/
 ### Parametre
 police de largeur fixe ; Profil > Settings > Apparence > Préférence de police de l’éditeur Markdown > sélectionnez
 ### Ecriture
-|Syntaxe          |Style           |Raccourci|
-|-                |-               |-        |
-|`*txt*`          |Italique        |Ctrl+I   |
-|`**txt**`        |Gras            |Ctrl+B   |
-|`***txt***`      |Gras et Italique|None     |
-|`~~txt~~`        |Barré           |None     |
-|`<sub>txt</sub>` |Indice          |None     |
-|`<sup>txt</sup>` |Exposant        |None     |
-|`>txt`           |Citation        |None     |
-|``` `txt` ```    |Code            |Crtl+E   |
-|`<!--txt-->`     |Comantaire      |None     |
+|Style           |Syntaxe          |Raccourci|
+|-:              |-                |:-:      |
+|Italique        |`*txt*`          |Ctrl+I   |
+|Gras            |`**txt**`        |Ctrl+B   |
+|Gras et Italique|`***txt***`      |None     |
+|Barré           |`~~txt~~`        |None     |
+|Indice          |`<sub>txt</sub>` |None     |
+|Exposant        |`<sup>txt</sup>` |None     |
+|Citation        |`>txt`           |None     |
+|Code            |``` `txt` ```    |Crtl+E   |
+|Comantaire      |`<!--txt-->`     |None     |
 ### Alertes
-`>[!tp]` et en citation les informations
-|Type       |Style             |Couleur|
-|-          |-                 |-      |
-|`NOTE`     |Met en evidance   |Bleu   |
-|`TIP`      |Facultatives      |Vert   |
-|`IMPORTANT`|Necessary         |Violet |
-|`WARNING`  |Risques potentiels|Ocre   |
-|`CAUTION`  |Negative          |Rouge  |
+`>[!Type]` et en citation les informations
+|Style             |Type       |Couleur|
+|-:                |-          |:-:    |
+|Met en evidance   |`NOTE`     |Bleu   |
+|Facultatives      |`TIP`      |Vert   |
+|Necessary         |`IMPORTANT`|Violet |
+|Risques potentiels|`WARNING`  |Ocre   |
+|Negative          |`CAUTION`  |Rouge  |
 ## Liste
 - ***Table*** ; `|` pour séparent chaque colonne et `-` pour créer l'en-tête de chaque colonne, Il doit y avoir au moins trois traits d’union dans chaque colonne de la ligne d’en-tête. Plus [ici](https://docs.github.com/fr/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
 - ***Tiré*** ; précéder une ou plusieurs lignes de texte de `1.`
