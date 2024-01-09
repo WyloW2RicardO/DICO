@@ -74,56 +74,57 @@ Iterable
 		\textit{\%} ; Reste\\
 		\textit{**} ; Puissance
 ## Commande
-	Fonction
-		input(text) : faire une demande
-		print() : affichée
-			\%(var) : marque le début du marqueur
-				\# : La conversion utilise la « forme alternative »
-				0 : Les valeurs numériques converties sont complétées de zéros
-			end=',' : pour le metre a la suite
-		round(nmbr) : Arrondi un nombre
-		sorted(iterable,/,*[, key=None, reverse=False]) : Ordonne les éléments dans la sequance
-			key : doit être une fonction (ou autre appelable) qui prend un seul argument et renvoie une clef à utiliser à des fins de tri
-			reverse : pour déterminer l'ordre descendant des tris
-	Classes : dictionaire de fonction
-		sujet.copy() : Renvoie une copie superficielle
-		sujet.count(var[, start[, end]]) : Renvoie le nombre d'éléments ayant la valeur var dans la liste.
-		sujet.find(var[,debut[, fin]]) : donne la position et -1 si il n'est pas dedans
-		sujet.isnan()
-	Instruction
-		as : capturer la valeur d'une partie d'un filtre avec le mot-clé
-		break : sort de l’enceinte
-		continue : continuer le flot d'exécution au prochain cycle de la boucle la plus imbriquée
-		del var : Supprime var
-		in ou not in : testent l’appartenance
-		is :
-		pass : ne fait rien, pour fournir une syntaxe correcteboucle if.
-		with :
-		raise :
-	Boucle
-		while : tan que ; 
-		for,else : itère sur les éléments d'une séquence
-		if,elif,else : 
-		math sujet : Filtre, Seul le premier qui correspond est exécuté, elle permet aussi d'extraire dans des variables des composantes de la valeur (afectation),
-		try,except, else,finally : Esayer ; 
-	open(file, mode='r', buffering=- 1, encoding=None, errors=None, newline=None, closefd=True, opener=None) : lire ou écrire qu'un seul fichier
-		Argument
-			file : 
-			mode : spécifier dans quel mode le fichier est ouvert, se combine
-				r : en lecture (par défaut)
-				w : en écriture, en effaçant le contenu du fichier
-				x : pour une création exclusive, échouant si le fichier existe déjà
-				a : en écriture, ajoutant à la fin du fichier s'il existe
-				b : mode binaire
-				t : mode texte
-				+ : ouvre en modification (lecture et écriture)
-	Classes
-		fil.close() :
-		fil.read([taille]) : lit une certaine quantité de données et la renvoie sous forme de chaîne
-		fil.readline() : lit une seule ligne du fichier
-		fil.seek(decalage, origine) : La position est calculée en ajoutant décalage à un point d'origine
-		fil.tell() : renvoie un entier indiquant la position actuelle dans le fichier
-		fil.write(text) : écrit le contenu de chaine dans le fichier et renvoie le nombre de caractères écrits. et la justaposition d'une 
+### Fonction
+- `input()` : faire une demande
+- `print()` : affichée
+  - `%(VAR)` : marque le début du marqueur
+    - `#` : La conversion utilise la « forme alternative »
+    - `0` : Les valeurs numériques converties sont complétées de zéros
+  - `end=','` : pour le metre a la suite
+- `round(NMBR)` : Arrondi un nombre
+- `sorted(iterable,/,*[, key=None, reverse=False])` : Ordonne les éléments dans la sequance
+  - `key` : doit être une fonction (ou autre appelable) qui prend un seul argument et renvoie une clef à utiliser à des fins de tri
+  - `reverse` : pour déterminer l'ordre descendant des tris
+### Classes
+- `sujet.copy()` : Renvoie une copie superficielle
+- `sujet.count(var[, start[, end]])` : Renvoie le nombre d'éléments ayant la valeur var dans la liste.
+- `sujet.find(var[,debut[, fin]])` : donne la position et -1 si il n'est pas dedans
+- `sujet.isnan()`
+### Instruction
+- `as` : capturer la valeur d'une partie d'un filtre avec le mot-clé
+- `break` : sort de l’enceinte
+- `continue` : continuer le flot d'exécution au prochain cycle de la boucle la plus imbriquée
+- `del VAR` : Supprime var
+- `in` ou `not in` : testent l’appartenance
+- `is` :
+- `pass` : ne fait rien, pour fournir une syntaxe correcteboucle if.
+- `with` :
+- `raise` :
+### Boucle
+- `while` : tan que ; 
+- `for,else` : itère sur les éléments d'une séquence
+- `if,elif,else` : 
+- `math sujet` : Filtre, Seul le premier qui correspond est exécuté, elle permet aussi d'extraire dans des variables des composantes de la valeur (afectation),
+- `try,except, else,finally` : Esayer ;
+## Lire
+- `open(file, mode='r', buffering=- 1, encoding=None, errors=None, newline=None, closefd=True, opener=None)` : lire ou écrire qu'un seul fichier
+  - `file` : chemin du ficher
+  - `mode` : spécifier dans quel mode le fichier est ouvert, se combine
+    - `r` : en lecture (par défaut)
+    - `w` : en écriture, en effaçant le contenu du fichier
+    - `x` : pour une création exclusive, échouant si le fichier existe déjà
+    - `a` : en écriture, ajoutant à la fin du fichier s'il existe
+    - `b` : mode binaire
+    - `t` : mode texte
+    - `+` : ouvre en modification (lecture et écriture)
+### Classes
+- `FILE.close()` :
+- `FILE.read([taille])` : lit une certaine quantité de données et la renvoie sous forme de chaîne
+- `FILE.readline()` : lit une seule ligne du fichier
+- `FILE.seek(decalage, origine)` : La position est calculée en ajoutant décalage à un point d'origine
+- `FILE.tell()` : renvoie un entier indiquant la position actuelle dans le fichier
+- `FILE.write(text)` : écrit le contenu de chaine dans le fichier et renvoie le nombre de caractères écrits. et la justaposition d'une
+
 		https://peps.python.org/pep-0636/
 		case condition : confronte la valeur d'une expression, si il es préfix de \_ il equivaut à else
 		var0 | var1 : combiner plusieurs littéraux en un seul filtre
@@ -149,10 +150,10 @@ Les arguments nommés doivent suivre les arguments positionnés
   - `CLASS.__doc__` : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
   - `CLASS.__annotations__` : dictionary and have no effect on any other part of the function
 - `dict(dico,**clef)` : Renvoie un nouveau dictionnaire initialisé à partir d'un argument positionnel optionnel, et un "iterable" (vide ou non) d'arguments nommés.
-  - `dico0 |= dico1` : Met à jour le dictionnaire dico0 avec les clés et les valeurs de dico1
-  - `dico.key()` : iterable des clef
-  - `dico.value()` : iterable des valeur
-  - `dico.items()` : iterable des clef et des valeur
+  - `DICT0 |= DICT1` : Met à jour le dictionnaire dico0 avec les clés et les valeurs de dico1
+  - `DICT.key()` : iterable des clef
+  - `DICT.value()` : iterable des valeur
+  - `DICT.items()` : iterable des clef et des valeur
 - `zip(list0,list1)` : renvoie un itérateur de n-uplets, où le ie n-uplet contient le ie élément de chacun des itérables passés en arguments, s'arrête lorsque l'itérable le plus court est épuisé
 - `iter(dico)` : Renvoie un itérateur sur les clés du dictionnaire =zip(dico.values(), d.keys())=[(var1, var0) for (var0, var1) in dico.items()]
 
