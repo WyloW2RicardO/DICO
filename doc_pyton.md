@@ -144,11 +144,10 @@ Les arguments nommés doivent suivre les arguments positionnés
   - `*, argmt` : n'autorise que les arguments nommés
 ### Fonction
 - `lambda * : f(*)` : fonction anonyme
-- `def nom (*)` : nouvelle fonction
+- `def NOM (*)` : nouvelle fonction
   - `return` : renvoient une valeur
-- class
-  - `CLASS.__doc__` : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
-  - `CLASS.__annotations__` : dictionary and have no effect on any other part of the function
+  - `DEF.__doc__` : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
+  - `DEF.__annotations__` : dictionary and have no effect on any other part of the function
 - `dict(dico,**clef)` : Renvoie un nouveau dictionnaire initialisé à partir d'un argument positionnel optionnel, et un "iterable" (vide ou non) d'arguments nommés.
   - `DICT0 |= DICT1` : Met à jour le dictionnaire dico0 avec les clés et les valeurs de dico1
   - `DICT.key()` : iterable des clef
@@ -156,20 +155,12 @@ Les arguments nommés doivent suivre les arguments positionnés
   - `DICT.items()` : iterable des clef et des valeur
 - `zip(list0,list1)` : renvoie un itérateur de n-uplets, où le ie n-uplet contient le ie élément de chacun des itérables passés en arguments, s'arrête lorsque l'itérable le plus court est épuisé
 - `iter(dico)` : Renvoie un itérateur sur les clés du dictionnaire =zip(dico.values(), d.keys())=[(var1, var0) for (var0, var1) in dico.items()]
-
-class :
-		Annotations
-			Les objets peuvent interagir entre eux, regroupe des "méthodes" et des attributs qui définissent un objet
-			utiliser une notation UpperCamelCase
-		Argument
-			sur\_class : 
-		Operateur
-			\_\_match\_arg\_\_(*\_) : prennent en charge le filtrage par arguments positionnels en définissant un ordre des attributs
-			def \_\_missing\_\_(self, clef) : cré les clef si il sont manquant
-			def \_\_init\_\_(self, clef) : self.clef=args ; initialise les clefs
-			@proprerty def clef(self) : return self.clef ; Récupération du nombre
-			@clef.setter def clef(self, args) : self.clef = args ; Changement du nombre
-			def clef(self) : sur\_class.clef(self)
+- `class` : Les objets peuvent interagir entre eux, regroupe des "méthodes" et des attributs qui définissent un objet, utiliser une notation UpperCamelCase
+  - `__match_arg__(*_)` : prennent en charge le filtrage par arguments positionnels en définissant un ordre des attributs
+  - `def __missing__(self, clef)` : cré les clef si il sont manquant
+  - `def \_\_init\_\_(self, clef)` : self.clef=args ; initialise les clefs
+  - `@proprerty def clef(self)` : return self.clef ; Récupération du nombre
+  - `@clef.setter def clef(self, args)` : self.clef = args ; Changement du nombre
 
 Module
 	sudo apt-get install python-mod : installer le module si il n'y est pas
