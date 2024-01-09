@@ -135,8 +135,8 @@ https://peps.python.org/pep-0448/ ; https://peps.python.org/pep-0572/
 - `@` : fonction décorateur
 ### Argument 
 Les arguments nommés doivent suivre les arguments positionnés
-- `argmt:type` : 
-- `argmt=defaut` : la valeur par défaut n'est évaluée qu'une seule fois par appel de la fonction
+- `argmt : type` : 
+- `argmt = defaut` : la valeur par défaut n'est évaluée qu'une seule fois par appel de la fonction
 - `*argmt` : n-uplet contenant les arguments positionnés au-delà de la liste des paramètres formels, lors de l'appel de fontion *argmt permet de separe la liste
 - `**argmt der` : dictionnaire contenant tous les arguments nommés à l'exception de ceux correspondant à un paramètre formel
 - Spéciaux  il est logique de restreindre la façon dont les arguments peuvent être transmis, peut etre util en cas d'embuiguité
@@ -144,7 +144,7 @@ Les arguments nommés doivent suivre les arguments positionnés
   - `*, argmt` : n'autorise que les arguments nommés
 ### Fonction
 - `lambda * : f(*)` : fonction anonyme
-- `def nom(*)` : nouvelle fonction
+- `def nom (*)` : nouvelle fonction
   - `return` : renvoient une valeur
 - class
   - `CLASS.__doc__` : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
