@@ -8,5 +8,5 @@ NOM|CLAVIER|EFFET
 NOM|CLAVIER|EFFET
 |-|:-:|-|
 |Renomer|F2||
+|Visualisation|`crtl+shift+v`|fichier Makdown|
 ### Autre
-- Visualisation de fichier Makdown : `crtl+shift+v`
