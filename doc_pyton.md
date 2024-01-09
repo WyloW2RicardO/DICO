@@ -229,22 +229,25 @@ Module
 		EOF :
 			Ctrl-Z, Enter : caractère fin de fichier
 		
-Style
-	Compréantion
-		list = [f(var) for var in range(nmbr)] : ainsi var n'est pas remplacé et n'existe pas
-		iterateur : apporte un niveau d'abstraction plus élévé
-		générateurs : permettent de créer plus facilement des itérateurs ; yield, similaire au return des fonctions sauf qu'il ne signifie pas la fin de l'exécution de la fonction mais une mise en pause et à la prochaine itération la fonction recherchera le prochain yield
-		packages : le dossier contien un ficher meme vide mais nomé "\_\_init\_\_.py"
-		from pckg import * : dans le fichier "\_\_init\_\_.py" metre \_\_all\_\_ (liste contenant nom de module devant être importés)
-		sou-packages :  from . import mod ; importations relatives
-	Ecriture
-		utilisez des indentations de 4 espaces et pas de tabulation
-		les lignes ne dépassent pas 79 caractères
-		lignes vides pour séparer les fonctions et les classes, ou pour scinder de gros blocs de code à l'intérieur de fonctions
-		placez les commentaires sur leurs propres lignes
-		espaces autour des opérateurs et après les virgules, mais pas juste à l'intérieur des parenthèses : a = f(1, 2) + g(3, 4)
-		Utilisez toujours self comme nom du premier argument des méthodes
-		Prenez l'habitude de nommer votre classe uniquement avec des caractères alphanumériques et commençant par une majuscule. Et à l'inverse l'instance peut être nommée sans majuscule.
-\end{document}
+## Style
+### Compréantion
+- `LIST = [F(VAR) for VAR in range(NMBR)]` : ainsi var n'est pas remplacé et n'existe pas
+- Iterateur : apporte un niveau d'abstraction plus élévé et donc peut augmenté la rapidité du programme
+- Générateurs : permettent de créer plus facilement des itérateurs ;
+  - `yield`, similaire au return des fonctions sauf qu'il ne signifie pas la fin de l'exécution de la fonction mais une mise en pause et à la prochaine itération la fonction recherchera le prochain yield
+- Paquet : le dossier contien un ficher meme vide mais nomé "__init__.py"
+- `from PAQUET import *` : dans le fichier "__init__.py" metre __all__ (liste contenant nom de module devant être importés par l'etoile)
+- sou-packages :  from ./CHEMIN import mod ; importations relatives
+### Ecriture
+- Utilisez des indentations de 4 espaces et pas de tabulation.
+- Les lignes ne dépassent pas 79 caractères.
+- Lignes vides pour séparer les fonctions et les classes, ou pour scinder de gros blocs de code à l'intérieur de fonctions.
+- Placez les commentaires sur leurs propres lignes.
+- Espaces autour des opérateurs et après les virgules, mais pas juste à l'intérieur des parenthèses : a = f(1, 2) + g(3, 4).
+- Utilisez toujours self comme nom du premier argument des méthodes.
+- Prenez l'habitude de nommer votre classe uniquement avec des caractères alphanumériques et commençant par une majuscule, à l'inverse l'instance peut être nommée sans majuscule.
+- Mettre les fonctions en majuscule pour bien faire la difference avec les varible en minuscule.
+- Mettre les variable pour definire la fonction en entier, à la difference des variable courente en abrevier.
+- Mettre les nom de dossier en minuscule et les noms de fichier avec la premier lettre en majuscule.
 
 <!-- Cée par WyloW2RicardO le 2024-01-09 -->
