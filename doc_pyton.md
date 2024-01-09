@@ -1,47 +1,28 @@
-\documentclass[a4paper,12pt]{report}
-\usepackage{ae,lmodern}
-\usepackage[francais]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[babel=true]{csquotes}
-\author{RICHARD Wilfried}
-\title{Python}
-\date{2023-11-28}
-\makeatletter
-\begin{document}
-	\maketitle
-	\tableofcontents
-	\subsection{Texte}
-		\subsubsection{Préfix}
-			\textit{R} ou \textit{r} : chaines brutes, traitent la barre oblique inversée comme un caractère normal\\
-			\textit{F} ou \textit{f} : littérale formatée ; \{\} peuvent contenir des champs à remplacer
-		\subsubsection{Argument}
-			\textit{\textbackslash n} : saut de ligne ;\\
-			\textit{\textbackslash r} : retour chariot ;\\
-			\textit{\textbackslash t} : tabulation ;\\
-			\textit{'''texte'''} ou \textit{"""texte""" }: Les retours à la ligne sont automatiquement inclus, mais on peut l'empêcher en ajoutant \ à la fin de la ligne
-		\subsubsection{Operateur}
-			\textit{str(ojt)} : Renvoie une représentation en chaîne de caractères de object
-		\subsubsection{Classes}
-			\textit{text.capitalize()} : son premier caractère en majuscule et le reste en minuscule\\
-			\textit{text.title()} : les mots commencent par une capitale\\
-			\textit{text.split([sep=None, maxsplit=- 1])} : liste des mots de la chaîne, en utilisant sep comme séparateur de mots, maxsplit est le nombre maximum de divisions.\\
-			\textit{text.substitute(mapping={}, /, **clef)}\\
-			\textit{text.strip([chars])} : Renvoie une copie de la chaîne dont des caractères initiaux et finaux sont supprimés\\
-			\textit{f'{}'.format(*args, **kwargs)} : 
-				https://peps.python.org/pep-3101/, 
-				https://docs.python.org/fr/3/library/string.html\#formatstrings\\
-			\textit{text.uper()} : mettre en majuscule une chaine de caractères
-	\subsection{Calculatrice}
-		\subsubsection{Operation}
-			\textit{+} ; Adition\\
-			\textit{-} ; Soustraction\\
-			\textit{/} ; Divition\\
-			\textit{//} ; Division Euclidienne\\
-			\textit{\%} ; Reste\\
-			\textit{**} ; Puissance
+# Python
+## Variable
+### Texte
+	\subsubsection{Préfix}
+		\textit{R} ou \textit{r} : chaines brutes, traitent la barre oblique inversée comme un caractère normal\\
+		\textit{F} ou \textit{f} : littérale formatée ; \{\} peuvent contenir des champs à remplacer
+	\subsubsection{Argument}
+		\textit{\textbackslash n} : saut de ligne ;\\
+		\textit{\textbackslash r} : retour chariot ;\\
+		\textit{\textbackslash t} : tabulation ;\\
+		\textit{'''texte'''} ou \textit{"""texte""" }: Les retours à la ligne sont automatiquement inclus, mais on peut l'empêcher en ajoutant \ à la fin de la ligne
+	\subsubsection{Operateur}
+		\textit{str(ojt)} : Renvoie une représentation en chaîne de caractères de object
+	\subsubsection{Classes}
+		\textit{text.capitalize()} : son premier caractère en majuscule et le reste en minuscule\\
+		\textit{text.title()} : les mots commencent par une capitale\\
+		\textit{text.split([sep=None, maxsplit=- 1])} : liste des mots de la chaîne, en utilisant sep comme séparateur de mots, maxsplit est le nombre maximum de divisions.\\
+		\textit{text.substitute(mapping={}, /, **clef)}\\
+		\textit{text.strip([chars])} : Renvoie une copie de la chaîne dont des caractères initiaux et finaux sont supprimés\\
+		\textit{f'{}'.format(*args, **kwargs)} : 
+			https://peps.python.org/pep-3101/, 
+			https://docs.python.org/fr/3/library/string.html\#formatstrings\\
+		\textit{text.uper()} : mettre en majuscule une chaine de caractères
 
-Nombres
+### Nombres
 	Type
 		int : nombre entier ;
 		float : décimaux ;
@@ -84,7 +65,15 @@ Iterable
 		sep.join(list) : transformer une liste en de caractère separer par sep
 		list.pop([nmbr]) : Enlève de la liste l'élément situé à la position indiquée et le renvoie en valeur de retour
 		list.remove(var) : Supprime de la liste le premier élément dont la valeur est égale à var
-Commande
+\subsection{Calculatrice}
+	\subsubsection{Operation}
+		\textit{+} ; Adition\\
+		\textit{-} ; Soustraction\\
+		\textit{/} ; Divition\\
+		\textit{//} ; Division Euclidienne\\
+		\textit{\%} ; Reste\\
+		\textit{**} ; Puissance
+## Commande
 	Fonction
 		input(text) : faire une demande
 		print() : affichée
@@ -128,48 +117,46 @@ Commande
 				b : mode binaire
 				t : mode texte
 				+ : ouvre en modification (lecture et écriture)
-		Classes
-			fil.close() :
-			fil.read([taille]) : lit une certaine quantité de données et la renvoie sous forme de chaîne
-			fil.readline() : lit une seule ligne du fichier
-			fil.seek(decalage, origine) : La position est calculée en ajoutant décalage à un point d'origine
-			fil.tell() : renvoie un entier indiquant la position actuelle dans le fichier
-			fil.write(text) : écrit le contenu de chaine dans le fichier et renvoie le nombre de caractères écrits. et la justaposition d'une 
-			https://peps.python.org/pep-0636/
-			case condition : confronte la valeur d'une expression, si il es préfix de \_ il equivaut à else
-			var0 | var1 : combiner plusieurs littéraux en un seul filtre
-			*\_ : filtre qui reconnaît les séquences à plus élément
-Création
-	Argument les arguments nommés doivent suivre les arguments positionnés
-		argmt:type : 
-		argmt=defaut : la valeur par défaut n'est évaluée qu'une seule fois par appel de la fonction
-		*argmt : n-uplet contenant les arguments positionnés au-delà de la liste des paramètres formels, lors de l'appel de fontion *argmt permet de separe la liste
-		**argmt\_der : dictionnaire contenant tous les arguments nommés à l'exception de ceux correspondant à un paramètre formel
-		Spéciaux  il est logique de restreindre la façon dont les arguments peuvent être transmis, peut etre util en cas d'embuiguité
-			argmt, / : restreint le passage aux seuls arguments par position
-			*, argmt : n'autorise que les arguments nommés
-	lambda *\_:fnctn(*\_) : fonction anonyme
-	def nom(*\_) : nouvelle fonction
-		Argument
-			fonction : decorateur ; utilisé avec @
-		Classes
-			nom.\_\_doc\_\_ : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
-			nom.\_\_annotations\_\_ : dictionary and have no effect on any other part of the function
-			return : renvoient une valeur
-	dict(dico,**clef) : Renvoie un nouveau dictionnaire initialisé à partir d'un argument positionnel optionnel, et un ensemble (vide ou non) d'arguments nommés.
-		Annotations
-			https://peps.python.org/pep-0448/
-			https://peps.python.org/pep-0572/
-		Indexation
-			dico[clef] : Renvoie l'élément de dico dont la clé est key
-		Operateur
-			dico0 |= dico1 : Met à jour le dictionnaire dico0 avec les clés et les valeurs de dico1
-			dico.key() : iterable des clef
-			dico.value() : iterable des valeur
-			dico.items() : iterable des clef et des valeur
-			zip(list0,list1) : renvoie un itérateur de n-uplets, où le ie n-uplet contient le ie élément de chacun des itérables passés en arguments, s'arrête lorsque l'itérable le plus court est épuisé
-			iter(dico) : Renvoie un itérateur sur les clés du dictionnaire =zip(dico.values(), d.keys())=[(var1, var0) for (var0, var1) in dico.items()]
-	class :
+	Classes
+		fil.close() :
+		fil.read([taille]) : lit une certaine quantité de données et la renvoie sous forme de chaîne
+		fil.readline() : lit une seule ligne du fichier
+		fil.seek(decalage, origine) : La position est calculée en ajoutant décalage à un point d'origine
+		fil.tell() : renvoie un entier indiquant la position actuelle dans le fichier
+		fil.write(text) : écrit le contenu de chaine dans le fichier et renvoie le nombre de caractères écrits. et la justaposition d'une 
+		https://peps.python.org/pep-0636/
+		case condition : confronte la valeur d'une expression, si il es préfix de \_ il equivaut à else
+		var0 | var1 : combiner plusieurs littéraux en un seul filtre
+		*\_ : filtre qui reconnaît les séquences à plus élément
+## Création
+### Annotations
+https://peps.python.org/pep-0448/ ; https://peps.python.org/pep-0572/
+- `@` : fonction décorateur
+### Argument 
+Les arguments nommés doivent suivre les arguments positionnés
+- `argmt:type` : 
+- `argmt=defaut` : la valeur par défaut n'est évaluée qu'une seule fois par appel de la fonction
+- `*argmt` : n-uplet contenant les arguments positionnés au-delà de la liste des paramètres formels, lors de l'appel de fontion *argmt permet de separe la liste
+- `**argmt der` : dictionnaire contenant tous les arguments nommés à l'exception de ceux correspondant à un paramètre formel
+- Spéciaux  il est logique de restreindre la façon dont les arguments peuvent être transmis, peut etre util en cas d'embuiguité
+  - `argmt, /` : restreint le passage aux seuls arguments par position
+  - `*, argmt` : n'autorise que les arguments nommés
+### Fonction
+- `lambda * : f(*)` : fonction anonyme
+- `def nom(*)` : nouvelle fonction
+  - `return` : renvoient une valeur
+- class
+  - `CLASS.__doc__` : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
+  - `CLASS.__annotations__` : dictionary and have no effect on any other part of the function
+- `dict(dico,**clef)` : Renvoie un nouveau dictionnaire initialisé à partir d'un argument positionnel optionnel, et un "iterable" (vide ou non) d'arguments nommés.
+  - `dico0 |= dico1` : Met à jour le dictionnaire dico0 avec les clés et les valeurs de dico1
+  - `dico.key()` : iterable des clef
+  - `dico.value()` : iterable des valeur
+  - `dico.items()` : iterable des clef et des valeur
+- `zip(list0,list1)` : renvoie un itérateur de n-uplets, où le ie n-uplet contient le ie élément de chacun des itérables passés en arguments, s'arrête lorsque l'itérable le plus court est épuisé
+- `iter(dico)` : Renvoie un itérateur sur les clés du dictionnaire =zip(dico.values(), d.keys())=[(var1, var0) for (var0, var1) in dico.items()]
+
+class :
 		Annotations
 			Les objets peuvent interagir entre eux, regroupe des "méthodes" et des attributs qui définissent un objet
 			utiliser une notation UpperCamelCase
@@ -228,29 +215,7 @@ Module
 		\textit{python -m venv tutorial-env} : créera le \textit{tutorial-env} répertoire s'il n'existe pas, et crée également des répertoires à l'intérieur contenant une copie du Python interprète et divers fichiers de soutien.\\
 		\textit{tutorial-env\textbackslash Scripts\textbackslash activate} : changer l'invite de votre shell à montrer ce qui environnement virtuel que vous utilisez\\
 		\textit{deactivate} : désactiver un environnement virtuel
-	\subsection{Pip}
-		système de gestion de paquets pour installer et gérer des librairies écrites en Python, 
-		https://pip.pypa.io/en/latest/index.html, 
-		https://pypi.org/\\
-		\textit{sudo apt-get install python-pip} : instalation si besoin
-		\subsubsection{Librairies}
-			\textit{black} : black \{votre\_fichier\} ; formateur de code python, fera gagner beaucoup de temps aussi bien à l'écriture qu' à la lecture\\
-			\textit{django} : cadre web Python de haut niveau qui encourage le développement rapide et une conception propre et pragmatique. https://www.djangoproject.com/\\
-			\textit{virtualenvwrapper} : création d'environement virtuel\\
-			\textit{beautifulsoup4} : html\\
-			\textit{ipdb} ; ipdb.set\_trace() : debeugeur pas par pas
-		\subsubsection{Fonction}
-			\textit{pip freeze} : Affiche toutes les lib installées et leur version\\
-			\textit{pip freeze > lib.txt} : exportez cette liste\\
-			\textit{pip install -r lib.txt} : importez cette liste\\
-			\textit{pip search lib} : recherche une librairie\\
-			\textit{pip show lib} : informations à propos d'un paquet précis\\
-			\textit{pip install lib} : installer une librarie\\
-			\textit{pip list --outdated} : indique quels librairie n'est plus à jour\\
-			\textit{pip install lib --upgrade} : metre a jour\\
-			\textit{pip bundle bund.pybundle -r lib.txt} : zip qui contient toutes les dépendances\\
-			\textit{pip install bund.pybundle} : installer les lib\\
-			\textit{pip uninstall lib} : desinstal
+
 	\
 	Type
 		py : modifiable
@@ -280,3 +245,5 @@ Style
 		Utilisez toujours self comme nom du premier argument des méthodes
 		Prenez l'habitude de nommer votre classe uniquement avec des caractères alphanumériques et commençant par une majuscule. Et à l'inverse l'instance peut être nommée sans majuscule.
 \end{document}
+
+<!-- Cée par WyloW2RicardO le 2024-01-09 -->
